@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TabularData from './Components/TableRow';
+import TabularData from './Components/TableAds';
 import Details from './Components/Details';
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';

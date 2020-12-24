@@ -10,7 +10,6 @@ with open('data/data.json') as f:
     file_data = json.load(f)
 
 
-# database population on api call
 @app.route('/', methods=['GET'])
 def main_populate():
     db.ad_collection.drop()
@@ -24,20 +23,6 @@ def retrieve_all_ads():
     db.ad_collection.insert_many(file_data)
 
     ads_json = []
-
-    # if db.ad_collection.find({}):
-    #     for ad in db.ad_collection.find({}):
-    #         print(ad)
-    #         ads_json = {ad['name']: {
-    #             'goal': ad['goal'],
-    #             'budget': ad['total_budget'],
-    #             'status': ad['status'],
-    #             'platforms': { ad['platforms']: {
-    #                 ad['platforms']['status'],
-    #
-    #             }}
-    #
-    #         }}
 
     if db.ad_collection.find({}):
         for ad in db.ad_collection.find({}).sort("name"):

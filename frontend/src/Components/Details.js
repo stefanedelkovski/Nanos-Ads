@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Header, Grid, Table, Menu, Icon, Label } from 'semantic-ui-react';
+import { Container, Header, Table, Label } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 const Details = ({ match }) => { 

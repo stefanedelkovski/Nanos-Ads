@@ -5,7 +5,7 @@ import { Table, Button, Header, Container, Icon }  from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 const TabularData = () => { 
-    const {history, location} = useReactRouter();
+    const {history} = useReactRouter();
     const [data, setData] = useState([])
 
     useEffect(()=>{
