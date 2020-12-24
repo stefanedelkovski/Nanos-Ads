@@ -37,7 +37,6 @@ def retrieve_all_ads():
 
 @app.route('/ads/<name>', methods=['POST'])
 def retrieve_one_add(name):
-    print(name)
     ads_json = []
     if db.ad_collection.find({}):
         for ad in db.ad_collection.find({}).sort("name"):
