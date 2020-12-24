@@ -5,10 +5,10 @@ This project's purpose is to share contents of an ad to a web application from a
 The API is written in Flask, which is connected to a MongoDB database and exposes API endpoints for retrieving all ads or retrieving an ad by name.
 The frontend is written in React, which fetches the responses from the API and displays it, and uses Semantics-UI for the interface.
 
-For this project, please make sure you have the following dependencies:
-Python >= 3.6
-Nodejs >= 14.15.1
-npm >= 6.14.8
+### For this project, please make sure you have the following dependencies:
+* Python >= 3.6
+* Nodejs >= 14.15.1
+* npm >= 6.14.8
 
 
 ## Installation
